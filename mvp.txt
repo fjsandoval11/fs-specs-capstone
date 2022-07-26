@@ -1,0 +1,14 @@
+Pitch: 
+Rebuilding my capstone project with react components and authencation feature. 
+
+Mangalist tracker is a web application that allows users to add and save their favorite mangas/animes.
+
+MVP:
+* Users can register an account
+* Users can login with their accounts
+* users can log out 
+* users can search for mangas/animes
+* Users can add/delete mangas/animes to personal list
+
+Future Features: 
+* users can save what chapter/episode they are on 
