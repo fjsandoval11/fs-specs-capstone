@@ -87,9 +87,9 @@ module.exports = {
    },
 
    addAnime:(req,res) => {
-    const {user_id, anime_name} = req.body
+    const {user_id, anime_name, anime_img, anime_link } = req.body
     sequelize.query(`
-    INSERT INTO animelist VALUES('${user_id}', '${anime_name}');
+    INSERT INTO animelist VALUES('${user_id}', '${anime_name}', '${anime_img}', '${anime_link}'  );
     `).then(dbRes => {
         res.status(200).send(dbRes[0])
         

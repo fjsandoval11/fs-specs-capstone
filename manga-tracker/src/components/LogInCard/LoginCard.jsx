@@ -100,15 +100,29 @@ const LoginCard = ({setUser_id, user_id}) => {
     
     <div> 
 
+      <div className='anime-list'>{savedList.map(anime => (
+        <SavedList 
+        anime={anime.anime_name}
+        key={anime.anime_name}
+        anime_img={anime.anime_img}
+        anime_link={anime.anime_link}
 
-      {savedList.length > 0 && savedList.map((anime, index) => {
-        console.log(anime.anime_name)
+        />
+      ))} 
+
+      </div>
+      
+
+
+      {/* {savedList.length > 0 && savedList.map((anime, index) => {
+        
         return <div key={index} >
         
           {anime.anime_name}
+          <img src={anime.anime_img} />
           
         </div>
-      })}
+      })} */}
       
    
      

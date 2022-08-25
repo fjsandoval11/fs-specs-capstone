@@ -13,7 +13,9 @@ const AnimeCard = (props) => {
     
     axios.post(`http://localhost:4003/addAnime`, {
       user_id: props.user_id ,
-      anime_name: props.anime.title
+      anime_name: props.anime.title,
+      anime_img: props.anime.images.jpg.image_url,
+      anime_link: props.anime.url
      }).then((response)=> {
       console.log(response)
       
